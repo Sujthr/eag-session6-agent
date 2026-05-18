@@ -1,0 +1,28 @@
+# Runtime state — excluded per assignment spec
+state/
+sandbox/
+usage.json
+
+# Local-only docs (not committed)
+RUNBOOK.md
+SUMMARY.md
+LINKEDIN_POST.md
+
+# Python / uv
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+
+# Environment (contains API keys)
+.env
+.env.*
+!.env.example
+
+# Gateway database (runtime artefact)
+*.db
+
+# IDE
+.vscode/
+.idea/

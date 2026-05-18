@@ -1,0 +1,27 @@
+[project]
+name = "eag-agent6"
+version = "0.1.0"
+description = "EAG Session 6 — Cognitive agent with typed contracts and LLM Gateway V3"
+requires-python = ">=3.11"
+
+dependencies = [
+    # MCP — both the server (FastMCP) and client (ClientSession, stdio_client)
+    "mcp[cli]>=1.0",
+    # Pydantic v2 for all typed contracts
+    "pydantic>=2.6",
+    # HTTP client used by the LLM gateway client wrapper
+    "httpx>=0.27",
+    # .env loading
+    "python-dotenv>=1.0",
+    # MCP server dependencies
+    "ddgs>=6.0",
+    "crawl4ai>=0.4",
+    "tavily-python>=0.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
