@@ -26,3 +26,10 @@ dist/
 # IDE
 .vscode/
 .idea/
+
+# Claude Code internal
+.claude/
+
+# macOS artefacts
+__MACOSX/
+.DS_Store
